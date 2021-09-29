@@ -1,0 +1,20 @@
+.note-screen{
+    width: 100%;
+}
+
+.note-bar{
+    display: flex;
+    background-color: $primary;
+    justify-content:space-between;
+    padding: 10px;
+
+    & h3{
+        color: white
+    }
+}
+
+.notes-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}

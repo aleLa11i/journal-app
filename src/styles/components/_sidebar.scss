@@ -1,0 +1,93 @@
+.sidebar-conteiner{
+    background-color: $dark-grey;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    border-right: 2px solid black;
+    width: 350px;
+    
+    
+}
+
+.sidebar-user{
+    display: flex;
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+
+    & h3{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+
+}
+
+.item-conteiner{
+    width: 100%;
+    overflow: auto;
+    // background: lighten($color: $light-grey, $amount: 20);
+}
+
+.sidebar-item{
+    display: flex;
+    background-color: lighten($color: $light-grey, $amount: 10);
+    margin: 15px 10px  ;
+    width: 90%;
+    height: 10vh;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background .5s;
+
+    & img{
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        width: 30%;
+        object-fit: cover;
+    }
+
+    & div{
+        padding: 5px;
+    }
+
+    &:hover{
+        background-color: $primary ;
+    }
+    
+}
+
+.btn-logout{
+    background: lighten($color: $light-grey, $amount: 20);
+    border:none;
+}
+
+.new-entry{
+
+    display: flex;
+    background-color: $light-grey;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+    cursor: pointer;
+    transition: background .5s;
+
+    & img{
+        width: 50px;
+        margin-right: 10px;
+    }
+
+    &:hover{
+        background-color: $primary ;
+    }
+
+}
+
+.sidebar-user-image{
+    border-radius: 100%;
+    object-fit: contain;
+    margin: 10px;
+    padding: 10px;
+}

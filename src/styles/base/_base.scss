@@ -1,0 +1,100 @@
+*{
+    margin: 0px;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+html,body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.alert{
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: red;
+    padding: 2px;
+    margin: 2px;
+    border-radius: 5px;
+}
+.success{
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: rgb(18, 187, 3);
+    padding: 2px;
+    margin: 2px;
+    border-radius: 5px;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.mb-1{
+margin-bottom: 5px;
+}
+.mb-5{
+margin-bottom: 20px;
+}
+.mt-1{
+margin-top: 5px;
+}
+.mt-5{
+margin-top: 20px;
+}
+.ml-1{
+margin-left: 5px;
+}
+.ml-5{
+margin-left: 20px;
+}
+.mr-1{
+margin-right: 5px;
+}
+.mr-5{
+margin-right: 20px;
+}
+.m-1{
+margin: 5px;
+}
+.m-5{
+margin: 20px;
+}
+
+.btn{
+    background-color: $primary;
+    color:$font;
+    border:none;
+    cursor: pointer;
+    margin:5px;
+    width: 100px;
+    transition: background .3s;
+    
+    &:hover{
+        background-color: darken($color: $primary, $amount: 10);
+    }
+
+    &:disabled{
+        background-color: lighten($color: $primary, $amount: 10);
+        cursor: auto;
+    }
+}
+
+
+
+.color-dark-primary{
+    color: darken($color: $primary, $amount: 14) ; 
+}
+.color-primary{
+    color: $primary ; 
+}
+.color-light-grey{
+    color: $light-grey ; 
+}
+
+.background-light-grey{
+    background-color: $light-grey;
+}
+
+
